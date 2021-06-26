@@ -1,3 +1,6 @@
+## Segmentation Results are in data/positive/__/preds.png
+## Classification results are in the csv file
+
 # Extend AI Machine Learning Engineer Assessment
 Congrats on making it this far! This test is to give you a small glimpse on the nature of the problems you could solve at Extend AI. Before diving in the complex nature of spacetime AI models (4D), we propose to start your journey at the 2D texture level.
 
