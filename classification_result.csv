@@ -1,0 +1,8 @@
+,image,mask,label,preds
+0,data/negative/3.png,,0,1
+1,data/negative/5.png,,0,0
+2,data/positive/8/img.png,data/positive/8/label.png,1,1
+3,data/positive/2/img.png,data/positive/2/label.png,1,1
+4,data/positive/7/img.png,data/positive/7/label.png,1,1
+5,data/positive/1/img.png,data/positive/1/label.png,1,1
+6,data/positive/4/img.png,data/positive/4/label.png,1,1
