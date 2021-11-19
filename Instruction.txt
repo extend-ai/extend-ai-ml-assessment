@@ -1,0 +1,4 @@
+1. Classification_dataset: test image dataset and a labels file
+2. Small_subset_of_segmentation_dataset: a small subset of exact train, valid, and test dataset
+3. classification_model_extend_ai: classification approach to solve the task
+4. segmentation_model_extend_ai: segmentation approach to solve this task and I also provide the answers of the two questions. 
