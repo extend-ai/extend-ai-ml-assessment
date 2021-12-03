@@ -4,7 +4,7 @@
 
 # Introduction
 
-This repository is created for detecting the wood defects. This is a segmentation problem. Lots of researches have been going on for the segmentation problems including supervised learning like U-Net, and Mask_RCNN for different fields. For this project, supervised learning like U-Net was chosen. Supervised learning was selected because of getting higher accuracy without making a complex project within short-time limit. For following the given instruction, the project was done in Jupyter notebook and pytorch was used. If python file is needed, I can upload it. 
+This repository is created for detecting the wood defects. This is a segmentation problem. Lots of researches have been going on for the segmentation problems including supervised learning like U-Net, and Mask_RCNN for different fields. For this project, supervised learning like U-Net was chosen. Supervised learning was selected because of getting higher accuracy without making a complex project within short-time limit. For following the given instruction, the project was done in Jupyter notebook and pytorch was used. If python file (.py) is needed, I can upload it. 
 
 
 # Inputs and Labeling
