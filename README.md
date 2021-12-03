@@ -1,21 +1,21 @@
-# Detection_of_Wood_Knot_Defect
+# Detection_of_Wood_Knots_Defect
 
 
 
 # Introduction
 
-This repository is created for detecting the wood defects. This is a segmentation problem. Lots of researches have been going on for the segmentation problems including supervised learning like U-Net, and Mask_RCNN for different fields. For this project, supervised learning like U-Net was chosen. Supervised learning was selected because of getting higher accuracy without making a complex project within short-time limit. For following the given instruction, the project was done in Jupyter notebook and pytorch was used. If .py file is needed, I can upload it. 
+This repository is created for detecting the wood defects. This is a segmentation problem. Lots of researches have been going on for the segmentation problems including supervised learning like U-Net, and Mask_RCNN for different fields. For this project, supervised learning like U-Net was chosen. Supervised learning was selected because of getting higher accuracy without making a complex project within short-time limit. For following the given instruction, the project was done in Jupyter notebook and pytorch was used. If python file is needed, I can upload it. 
 
 
-# Inputs and Label
+# Inputs and Labeling
 
-The inputs that were given were unlabeled. For supervise learning, labeling was needed. There are different kinds of knots can be found in woods [1]. For reducing complexity, two labels were chosen and they were normal wood and knots. Segmentation masks were created for targets. There were different tools for createing masks such as CVAT and labelme. Labelme was used for this project [2]. The png files for segmentation masks were created for targets. COCO format was not used for the limitation of time. After creating segmentaion masks, inputs and targets images were ratated 180 degeree and total of 30 images were created.
+The inputs that were given were unlabeled. For supervise learning, labeling was needed. There are different kinds of knots can be found in woods [1]. For reducing complexity, two labels were chosen and they were normal wood and wood knots. Segmentation masks were created for targets. There were different tools for createing masks such as CVAT and labelme. Labelme was used for this project [2]. Using Labelme, json file was created with label. From the json file, the png images for all segmentation mask were created for targets. COCO format was not used for the limitation of time. After creating segmentaion masks, 14 inputs and 14 targets images were created by rotating 180 degeree each png / jpg file and total of 30 were created.
 
 
 
 # Deep learning Model
 
-For this projects, I wanted to use both U-Net [3] and Mask R-CNN [4] and compare the differences for detecting the wood knots. In future, I will do that. Here, I used U-Net. U-Net uses the same feature maps that are used for contraction to expand a vector to a segmented image. This would preserve the structural integrity of the image which would reduce distortion enormously. 
+For this project, I wanted to use both U-Net [3] and Mask R-CNN [4] and compare the differences for detecting the wood knots. In future, I will do that. Here, I used U-Net. U-Net uses the same feature maps that are used for contraction to expand a vector to a segmented image. This would preserve the structural integrity of the image which would reduce distortion enormously. 
 
 
 # Training and Testing
