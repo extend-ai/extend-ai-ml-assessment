@@ -1,4 +1,4 @@
-# Detection_of_Wood_Knots_Defect
+# Detection_of_Wood_Knots
 
 
 
