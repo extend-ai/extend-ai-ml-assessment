@@ -1,23 +1,12 @@
-# Extend AI Machine Learning Engineer Assessment
-Congrats on making it this far! This test is to give you a small glimpse on the nature of the problems you could solve at Extend AI. Before diving in the complex nature of spacetime AI models (4D), we propose to start your journey at the 2D texture level.
+# Extend AI Machine Learning Engineer Assessment Solution
 
-We are pushing technology and we usually go after difficult problems to solve that usually requires between 2 weeks to 6 months of efforts. Having a good methodology to understand the problem, evaluate and test hypotheses, documenting and taking the solution to production is therefore essential to have fun working at Extend AI.
+The primary method used in this solution is image augmentaion with the albumentations library and transfer learning with weights pre-trained on the Imagenet dataset. The main steps can be broken down into the following:
 
-We like to think outside of the box with a first principles perspective.
+1. The images are first annotated with Apeer to identify the obvious defects and binary masks are used as part of the training data.
+2. Images and corresponding masks are resized and then separated into training and test sets. The test set has only one image. Images from both sets are broken down into small square patches which form the new training and testing data.
+3. These patches are then augmented to increase the size of the data set.
+4. The U-net architecture from segmentaion models library is trained on the new training data. The model is first loaded with pre-trained weights from segmentaion models library.
+5. Training is first carried out for 3 epochs with the encoder weights frozen to fine-tune the decoder and prevent any large updates to the enocder weights. Then the entire model is trained for 100 epochs. The optimizer used is Adam with a learning rate of 0.001.
+6. Training and validation splits are generated during training using the model.fit function of Keras api.
 
-We hope you'll enjoy solving this problem!
-
-## Challenge
-- Given unlabeled images of wood slices (i.e. sections) in the `data` folder, create a ML model to identify and segment anomalies (i.e.knots, spots, etc).
-- Present it as one or more Jupyter Notebooks.
-- Describe your steps, we're really interested in how you tackle problems.
-- Python and PyTorch preferred.
-- Limit as much as possible the usage of classical CV. We are interested in seeing how you would approach this problem from a deep machine learning perspective. 
-- As you’ll see, the quantity of data is limited on purpose. Capturing the physical world is challenging and we want to see how creative you will be to solve this important and frequent data problem.
-- Feel free to contact us for more information and clarifications if needed. You'll receive an invite to join a Slack channel so you can get in touch with us during the process.
-- After you finish the challenge, propose how you would improve the model in the near future and how you would transfer learnings to other types of surfaces (i.e. not wood).
-
-## How to do the assessment
-- Fork this repo. 
-- Code and document in your fork. 
-- Send a pull request once you’re done.
+The iou_score is used as the performance metric and it stays very low for both training and validation since it is difficult to train on limited annotated data, even with augmentations. The test peformance is similarly very poor and the model fails to segment the obvious defect in the image.
