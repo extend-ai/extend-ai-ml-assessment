@@ -1,3 +1,22 @@
+# About My Submission
+My submission is in the solution solution.ipynb file. I added an HTML file so you can view my work in tour browser without setting up your environment. My solution is in 2 parts. The first one localize the anomalies on the piece of wood using the activation layer of a classification NN. After exporting potential localized smaller image of the anomalies, the second NN will classify them. I manually created a small datasets of cracks, knots, and perfect (desired) pieces of wood. 
+
+By no means those models are ready for production. I spent a minimum amount of time working on the architectures and focused on the pipeline to get the desired output. I assumed this was the goal of this test considering the dataset size.
+
+I hope this finds you well.
+
+
+Cheers,
+
+Tristan Toupin
+
+https://github.com/tristantoupin/extend-ai-ml-assessment
+
+
+---
+
+
+
 # Extend AI Machine Learning Engineer Assessment
 Congrats on making it this far! This test is to give you a small glimpse on the nature of the problems you could solve at Extend AI. Before diving in the complex nature of spacetime AI models (4D), we propose to start your journey at the 2D texture level.
 
