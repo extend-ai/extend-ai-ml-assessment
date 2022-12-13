@@ -3,4 +3,4 @@
 - The solution utilizes simple thresholding to detect anomalies from the cosine similarity matrix of embeddings. Here, a more sophisticated anomaly detection algorithm that accepts a similarity matrix as input could be applied, such as one-class-svm.
 - The same pretrained model could be applied to some other surface. Since, I did not use any training for the wood images. Here, the only problem is that the threshold probably needs to be readjusted for every new surface.
 - There may be a more informed way to pinpoint the threshold by utilizing the whole mean cosine score distribution.
-- Sorry that I was not able to implement a more sophisticated solution roughly outlined above. I did not have much time due to holiday preparations 
+- Sorry that I was not able to implement a more sophisticated solution roughly outlined above. I did not have much time due to the holiday preparations 
